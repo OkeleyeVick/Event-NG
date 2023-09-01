@@ -583,16 +583,16 @@
 		<script>
 			(() => {
 				const textArea = document.querySelector("form textarea.form-control");
-				let wordCount = [];
-				document.addEventListener("keyup", (e) => {
-					const spaceClicked = e.key == "Space" || e.key == " " || e.key == 32;
-					if (spaceClicked) {
-						let lastWord;
-						lastWord = e.target.value.trim().split(" ").at(-1);
-						wordCount.push(lastWord);
+				const wordCounter = document.querySelector(".v-max-char");
 
-						console.log(wordCount);
+				textArea.addEventListener("keydown", function (e) {
+					const length = e.target.value.split(" ").length;
+
+					if (length > 250) {
+						return e.preventDefault();
 					}
+
+					wordCounter.innerHTML = `${length}/250`;
 				});
 
 				function stripWord(word) {}
