@@ -193,6 +193,7 @@ header {
 				}
 				@media all and (min-width: 768px) {
 					& {
+						background-color: var(--primary-clr);
 						border-radius: 2px;
 						color: var(--white) !important;
 						padding: 0.9rem 1.3rem;

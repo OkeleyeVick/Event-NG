@@ -1,0 +1,157 @@
+.v-nice-padding {
+	padding-block: 5.5rem;
+}
+.v-hero-top {
+	/* background-color: var(--primary-clr); */
+	background-color: var(--black);
+
+	& .row {
+		row-gap: 2.5rem;
+	}
+
+	& .v-hero-left {
+		row-gap: 1.5rem;
+
+		& .v-hero-title {
+			font-weight: 700;
+			color: var(--white);
+			& .v-green {
+				color: var(--primary-clr-dark);
+			}
+
+			@media all and (min-width: 991px) {
+				& {
+					font-size: 3.3rem;
+				}
+			}
+		}
+
+		& .v-subcontent {
+			color: var(--white);
+			line-height: 1.4;
+			font-size: 0.9rem;
+		}
+
+		& .v-cat {
+			background-color: var(--primary-clr);
+			color: var(--white);
+			width: max-content;
+			padding: 1.05rem 1.3rem;
+			border-radius: 3px;
+			font-size: 0.89rem;
+			font-weight: 600;
+			transition: background-color 300ms ease;
+
+			&:hover {
+				background-color: var(--primary-clr-dark);
+			}
+		}
+	}
+}
+
+.v-image-row {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	justify-content: space-evenly;
+
+	& .v-c-image {
+		min-width: 100px;
+		max-width: 120px;
+	}
+}
+
+.v-sec {
+	background-color: var(--primary-clr);
+	& .v-sec-inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2rem;
+
+		& .v-title {
+			font-weight: 800;
+
+			& i {
+				color: var(--white);
+			}
+		}
+	}
+	& .v-subcontent {
+		line-height: 1.4;
+		font-size: 0.9rem;
+		color: var(--white);
+		font-weight: 400;
+	}
+}
+.v-20u2tsd {
+	padding-top: 3rem;
+
+	& .v-20u2tsd-container-title {
+		& .v-title {
+			& .v-green {
+				color: var(--primary-clr);
+			}
+		}
+	}
+	.v-parent-c {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2.5rem;
+		margin-block: 3rem 5rem;
+
+		& > div {
+			& .row {
+				row-gap: 1.2rem;
+			}
+		}
+	}
+}
+.v-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.2rem;
+
+	.v-pre {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 0.8rem;
+		color: var(--primary-clr);
+	}
+
+	.v-subcontent {
+		font-size: 0.92rem;
+		line-height: 1.5;
+
+		& i {
+			font-weight: 600;
+			color: var(--primary-clr);
+			margin-inline: 1.4px;
+		}
+	}
+
+	.v-title {
+		font-weight: 700;
+		color: var(--primary-clr-dark);
+
+		.v-content.v-variant & {
+			color: var(--black);
+			font-weight: 600;
+			word-spacing: 2px;
+
+			@media all and (min-width: 991px) {
+				& {
+					font-size: 2.8rem;
+				}
+			}
+
+			& .v-green {
+				color: var(--primary-clr);
+			}
+		}
+		@media all and (min-width: 991px) {
+			& {
+				font-size: 3rem;
+			}
+		}
+	}
+}
