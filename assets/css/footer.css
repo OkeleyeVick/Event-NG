@@ -1,9 +1,23 @@
 .v-nxt-jumbo {
+	overflow: hidden;
+
+	& .position-absolute {
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+
+		& img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
 	& .row {
 		background-color: var(--primary-clr);
 		padding: 1.5rem 0 1rem;
 		row-gap: 1.5rem;
 		border-radius: 1rem;
+		position: relative;
 	}
 
 	& .v-text-content {
